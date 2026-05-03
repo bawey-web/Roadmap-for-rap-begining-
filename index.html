@@ -3,63 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rap Roadmap | Begin Your Journey</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>The Complete Rap Roadmap | Bawey Web</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a0a; color: #fff; line-height: 1.6; }
+        
+        header { 
+            background: linear-gradient(rgba(255,0,85,0.2), #0a0a0a), url('https://images.unsplash.com/photo-1520110120381-002824345d17?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; padding: 100px 20px; text-align: center; border-bottom: 3px solid #ff0055;
+        }
+
+        h1 { font-size: 3.5rem; color: #ff0055; text-transform: uppercase; letter-spacing: 4px; }
+        .sub-text { font-size: 1.1rem; color: #aaa; margin-top: 10px; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; }
+
+        /* Roadmap Section */
+        h2 { color: #ff0055; margin: 40px 0 20px; text-transform: uppercase; border-left: 5px solid #ff0055; padding-left: 15px; }
+
+        .roadmap-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .step-card { background: #161616; padding: 25px; border-radius: 12px; position: relative; border: 1px solid #222; }
+        .step-card::before { content: attr(data-step); position: absolute; right: 20px; top: 10px; font-size: 4rem; color: rgba(255,0,85,0.1); font-weight: 900; }
+        .step-card h3 { color: #ff0055; margin-bottom: 10px; font-size: 1.4rem; }
+        .step-card ul { list-style: square; margin-left: 20px; color: #ccc; }
+
+        /* Gear Section */
+        .gear-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .gear-card { background: #1a1a1a; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: 0.3s; }
+        .gear-card:hover { border-color: #ff0055; transform: scale(1.02); }
+        .gear-card img { width: 100%; height: 200px; object-fit: cover; filter: grayscale(50%); }
+        .gear-card:hover img { filter: grayscale(0%); }
+        .gear-info { padding: 20px; }
+        .gear-info h3 { margin-bottom: 10px; }
+        .price { color: #00ff88; font-weight: bold; margin-top: 10px; display: block; }
+
+        footer { text-align: center; padding: 60px; color: #444; font-size: 0.9rem; }
+
+        @media (max-width: 600px) { h1 { font-size: 2.2rem; } }
+    </style>
 </head>
 <body>
 
     <header>
         <h1>RAP ROADMAP</h1>
-        <p>Zero se Hero tak ka safar, hip-hop ki duniya mein.</p>
+        <p class="sub-text">Zero level se Professional Rapper tak ka full process.</p>
     </header>
 
     <div class="container">
-        <section class="roadmap">
-            <div class="step">
-                <div class="step-number">01</div>
-                <div class="step-content">
-                    <h3>Suno aur Samjho (Deep Listening)</h3>
-                    <p>Sirf gaane mat suno, beats aur lyrics ke structure ko observe karo. Old school se lekar modern trap tak sab explore karo.</p>
+        
+        <h2>1. The Art of Rap (Phase-wise)</h2>
+        <div class="roadmap-grid">
+            
+            <div class="step-card" data-step="01">
+                <h3>Writing & Lyrics</h3>
+                <ul>
+                    <li><b>Rhyme Schemes:</b> AABB, ABAB aur Multi-syllabic rhymes seekho.</li>
+                    <li><b>Wordplay:</b> Metaphors, Similes aur Punchlines par focus karo.</li>
+                    <li><b>Storytelling:</b> Apne real-life experiences ko verse mein badlo.</li>
+                </ul>
+            </div>
+
+            <div class="step-card" data-step="02">
+                <h3>Flow & Rhythm</h3>
+                <ul>
+                    <li><b>The Count:</b> 4/4 beat par bars likhna seekho.</li>
+                    <li><b>Cadence:</b> Alag-alag tarike se word pronounce karke rhythm banao.</li>
+                    <li><b>Speed:</b> Pehle slow beats par control pao, phir fast flow try karo.</li>
+                </ul>
+            </div>
+
+            <div class="step-card" data-step="03">
+                <h3>Delivery & Voice</h3>
+                <ul>
+                    <li><b>Breath Control:</b> Verse ke beech mein kahan saans leni hai, ye fix karo.</li>
+                    <li><b>Confidence:</b> Voice mein energy aur bhari-pan (chest voice) lao.</li>
+                    <li><b>Emotions:</b> Sad song aur Aggressive song ki tone alag rakho.</li>
+                </ul>
+            </div>
+
+            <div class="step-card" data-step="04">
+                <h3>Recording & Mixing</h3>
+                <ul>
+                    <li><b>Layering:</b> Main vocals ke sath ad-libs aur backing vocals record karo.</li>
+                    <li><b>EQ & Compression:</b> Awaz ko clear aur loud banane ke liye basics seekho.</li>
+                    <li><b>Distro:</b> Spotify aur YouTube par apna music release karna seekho.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <h2>2. Best Gear & Tools</h2>
+        <div class="gear-grid">
+            
+            <div class="gear-card">
+                <img src="Screenshot_20260503-163824.jpg" alt="Audio Technica AT2020" />
+                <div class="gear-info">
+                    <h3>AT2020 Condenser Mic</h3>
+                    <p>Studio Quality vocals ke liye gold standard budget mic.</p>
+                    <span class="price">~ ₹8,500</span>
                 </div>
             </div>
 
-            <div class="step">
-                <div class="step-number">02</div>
-                <div class="step-content">
-                    <h3>Vocabulary & Rhyme Book</h3>
-                    <p>Ek diary banao. Roz naye words aur rhyming pairs likho. Metaphors aur similes ka use seekho.</p>
+            <div class="gear-card">
+                <img src="Screenshot_20260503-164336.jpg" alt="Shure SM58" />
+                <div class="gear-info">
+                    <h3>Shure SM58</h3>
+                    <p>Agar room mein noise hai, toh ye mic best hai. Live performance ke liye bhi top.</p>
+                    <span class="price">~ ₹9,000</span>
                 </div>
             </div>
 
-            <div class="step">
-                <div class="step-number">03</div>
-                <div class="step-content">
-                    <h3>Master the Flow</h3>
-                    <p>Beat (Instrumental) par bina ruke bolne ki practice karo. Counting beats (1, 2, 3, 4) seekho taaki tum off-beat na jao.</p>
+            <div class="gear-card">
+                <img src="Screenshot_20260503-164429.jpg" alt="Bandlab App" />
+                <div class="gear-info">
+                    <h3>BandLab (Mobile/PC)</h3>
+                    <p>Free DAW jisme beats, recording aur auto-tune sab mil jayega.</p>
+                    <span class="price">FREE</span>
                 </div>
             </div>
 
-            <div class="step">
-                <div class="step-number">04</div>
-                <div class="step-content">
-                    <h3>Write Your First Verse</h3>
-                    <p>4 ya 8 lines se shuru karo. Topic wo chuno jo tumhare dil ke paas ho. Authenticity is key!</p>
+            <div class="gear-card">
+                <img src="Screenshot_20260503-164531.jpg" alt="Audio Interface" />
+                <div class="gear-info">
+                    <h3>Focusrite Scarlett</h3>
+                    <p>Mic ko PC se connect karne ke liye best audio interface.</p>
+                    <span class="price">~ ₹10,000</span>
                 </div>
             </div>
 
-            <div class="step">
-                <div class="step-number">05</div>
-                <div class="step-content">
-                    <h3>Record & Analyze</h3>
-                    <p>Phone ke mic par record karo aur khud suno. Dekho kahan improve kar sakte ho, phir dobara try karo.</p>
-                </div>
-            </div>
-        </section>
+        </div>
+
     </div>
 
     <footer>
-        <p>Made with ❤️ for the Hip-Hop Community</p>
+        <p>Built for the Culture by Bawey-Web © 2026</p>
     </footer>
 
 </body>
