@@ -94,3 +94,8 @@ footer {
     .step { flex-direction: column; }
     .step-number { margin-bottom: 10px; }
 }
+/* Purane CSS ke niche ye add kar do */
+.gear-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+.card { background: #1a1a1a; padding: 15px; border-radius: 10px; border: 1px solid #ff0055; }
+.card img { width: 100%; border-radius: 5px; }
+.card h3 { color: #ff0055; margin: 10px 0; }
